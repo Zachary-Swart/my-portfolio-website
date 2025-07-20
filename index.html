@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio site for Zachary Swart">
+  <title>Zachary Swart | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header__container container">
+
+    <!-- Logo -->
+    <a href="index.html" class="header__logo">
+      <img src="images/logos/zs-logo.png" alt="Zachary Swart Logo" class="header__logo-image">
+    </a>
+
+    <!-- Your Name -->
+    <div class="header__name">Zachary Swart</div>
+
+    <!-- Navigation -->
+    <nav class="header__nav" aria-label="Main navigation">
+      <ul class="header__nav-list">
+        <li><a href="index.html" class="header__nav-link active">Home</a></li>
+        <li><a href="about.html" class="header__nav-link">About</a></li>
+        <li><a href="resume.html" class="header__nav-link">Resume</a></li>
+        <li><a href="projects.html" class="header__nav-link">Projects</a></li>
+        <li><a href="testimonials.html" class="header__nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        <li><a href="report.html" class="header__nav-link">Report</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__overlay">
+      <div class="hero__content container">
+        <img src="images/byui-pictures/career-center-portrait.jpg" alt="Zachary Swart" class="hero__image" />
+
+        <div class="hero__text">
+          <h1 class="hero__title">Introduction</h1>
+          <p class="hero__description">
+            Hi there! You found my website! Feel free to explore around and discover more about my life story, passions, and experiences.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="assets/resume-zachary-swart.pdf" download class="btn">Download Resume PDF</a>
+            <a href="assets/resume-zachary-swart.docx" download class="btn">Download Resume DOCX</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Get to Know Me Section -->
+  <section class="get-to-know-me">
+    <div class="get-to-know-me__container container">
+      <h2 class="get-to-know-me__title">Get to Know Me</h2>
+
+      <!-- Intro -->
+      <p class="get-to-know-me__intro">
+        My name is Zachary Swart! I’m a California beach lover who’s just as happy riding dirt toys through the desert as I am playing piano melodies that get stuck in your head. I’m always up for a good conversation, a spontaneous adventure, or trying something new — especially if it involves friends, sunshine, or sharing something meaningful. Life’s too short to stay in your comfort zone!
+      </p>
+
+      <div class="get-to-know-me__gallery">
+        <!-- Figure 1: California Home -->
+        <figure class="get-to-know-me__figure">
+          <a
+            href="images/california-moments/spikeball.jpg"
+            data-lightbox="get-to-know-me"
+            data-title="Playing spikeball with friends in California"
+          >
+            <img
+              src="images/california-moments/spikeball.jpg"
+              alt="Playing spikeball on the beach in California"
+              class="get-to-know-me__image"
+            />
+          </a>
+          <figcaption class="get-to-know-me__caption">California Adventures</figcaption>
+        </figure>
+
+        <!-- Figure 2: Piano Hobby -->
+        <figure class="get-to-know-me__figure">
+          <a
+            href="images/byui-pictures/piano-at-the-mc.jpg"
+            data-lightbox="get-to-know-me"
+            data-title="Playing piano at the Music Center"
+          >
+            <img
+              src="images/byui-pictures/piano-at-the-mc.jpg"
+              alt="Playing piano at the Music Center"
+              class="get-to-know-me__image"
+            />
+          </a>
+          <figcaption class="get-to-know-me__caption">Music & Hobbies</figcaption>
+        </figure>
+
+        <!-- Figure 3: Mission Experience -->
+        <figure class="get-to-know-me__figure">
+          <a
+            href="images/mission-pictures/last-day-on-the-mission.jpg"
+            data-lightbox="get-to-know-me"
+            data-title="Last day serving on my mission"
+          >
+            <img
+              src="images/mission-pictures/last-day-on-the-mission.jpg"
+              alt="Final day serving on my mission"
+              class="get-to-know-me__image"
+            />
+          </a>
+          <figcaption class="get-to-know-me__caption">Mission Journey</figcaption>
+        </figure>
+      </div>
+
+      <div class="get-to-know-me__cta">
+        <a href="about.html" class="btn">Learn More About Me</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- My Education Section -->
+  <section class="education">
+    <div class="education__container container">
+      
+      <!-- Left/Right Content -->
+      <div class="education__content">
+        
+        <!-- Left: Text content -->
+        <div class="education__text">
+          <h2 class="education__title">My Education</h2>
+          <p class="education__description">
+            Attending BYU–Idaho has been one of the best decisions I’ve ever made. The professors here genuinely care for students and go the extra mile to help us succeed, and the school culture is incredibly welcoming — friendly, faith-filled, and full of energy. I started in Winter 2024 and quickly found a passion for business analytics. I dove into classes that introduced me to tools like SQL, Python, Power BI, Excel, R, and even web design. I’ve loved learning how to connect data with real-world insights, and each class has stretched the way I think.
+          </p>
+          <a href="projects.html" class="btn">View My Courses</a>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="education__image-wrapper">
+          <figure class="education__figure">
+            <a href="https://www.byui.edu/" target="_blank" rel="noopener">
+              <img
+                src="images/byui-pictures/byui-monument.jpg"
+                alt="BYU-Idaho campus monument at sunset"
+                class="education__figure-image"
+              />
+            </a>
+            <figcaption class="education__figure-caption">BYU–Idaho Campus</figcaption>
+          </figure>
+        </div>
+        
+      </div>
+
+      <!-- Scrolling Skills -->
+      <div class="education__skills-scroller">
+        <div class="education__skills-track">
+          <!-- First Set -->
+          <div class="education__skills-set">
+            <figure class="education__skill">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Excel.svg" alt="Excel Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Excel</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Word.svg" alt="Word Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Word</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" target="_blank" rel="noopener">
+                <img src="images/skill-icons/PowerPoint.svg" alt="PowerPoint Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">PowerPoint</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://powerbi.microsoft.com/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Power-BI.svg" alt="Power BI Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Power BI</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.mysql.com/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/MySQL.png" alt="MySQL Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">MySQL</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.python.org/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Python.png" alt="Python Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Python</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.r-project.org/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/R.png" alt="R Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">R</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">
+                <img src="images/skill-icons/HTML.png" alt="HTML Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">HTML</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">
+                <img src="images/skill-icons/CSS.svg" alt="CSS Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">CSS</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://en.wikipedia.org/wiki/Computer_hardware" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Hardware.png" alt="Hardware Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Hardware</figcaption>
+            </figure>
+          </div>
+
+          <!-- Second Set: duplicate for seamless scroll -->
+          <div class="education__skills-set">
+            <figure class="education__skill">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Excel.svg" alt="Excel Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Excel</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Word.svg" alt="Word Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Word</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" target="_blank" rel="noopener">
+                <img src="images/skill-icons/PowerPoint.svg" alt="PowerPoint Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">PowerPoint</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://powerbi.microsoft.com/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Power-BI.svg" alt="Power BI Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Power BI</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.mysql.com/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/MySQL.png" alt="MySQL Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">MySQL</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.python.org/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Python.png" alt="Python Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Python</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://www.r-project.org/" target="_blank" rel="noopener">
+                <img src="images/skill-icons/R.png" alt="R Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">R</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">
+                <img src="images/skill-icons/HTML.png" alt="HTML Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">HTML</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">
+                <img src="images/skill-icons/CSS.svg" alt="CSS Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">CSS</figcaption>
+            </figure>
+            <figure class="education__skill">
+              <a href="https://en.wikipedia.org/wiki/Computer_hardware" target="_blank" rel="noopener">
+                <img src="images/skill-icons/Hardware.png" alt="Hardware Icon" class="education__skill-icon">
+              </a>
+              <figcaption class="education__skill-label">Hardware</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- My Projects Section -->
+  <section class="projects">
+    <div class="projects__container container">
+      <h2 class="projects__title text-center">My Featured Projects</h2>
+
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <div class="projects__card">
+          <a href="#" class="projects__card-link">
+            <div class="projects__card-image-wrapper">
+              <img
+                src="images/project-pictures/excel-project-card.jpeg"
+                alt="Screenshot of Excel Data Checker"
+                class="projects__card-image"
+              />
+              <div class="projects__card-overlay">
+                <span class="projects__card-overlay-text">View Details</span>
+              </div>
+            </div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">Excel Data Checker</h3>
+              <p class="projects__card-description">
+                Built a data error checker using Excel VBA and macros.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="projects__card">
+          <a href="#" class="projects__card-link">
+            <div class="projects__card-image-wrapper">
+              <img
+                src="images/project-pictures/sql-project-card.jpeg"
+                alt="Screenshot of MySQL Queries"
+                class="projects__card-image"
+              />
+              <div class="projects__card-overlay">
+                <span class="projects__card-overlay-text">View Details</span>
+              </div>
+            </div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">MySQL Queries</h3>
+              <p class="projects__card-description">
+                Translated business questions into working SQL queries.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="projects__card">
+          <a href="#" class="projects__card-link">
+            <div class="projects__card-image-wrapper">
+              <img
+                src="images/project-pictures/powerbi-project-card.jpg"
+                alt="Screenshot of Dynamic Dashboard"
+                class="projects__card-image"
+              />
+              <div class="projects__card-overlay">
+                <span class="projects__card-overlay-text">View Details</span>
+              </div>
+            </div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">Dynamic Dashboard</h3>
+              <p class="projects__card-description">
+                Visualized data insights using Power BI in a class project.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="projects__actions text-center">
+        <a href="projects.html" class="btn">View All My Projects</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Me Section -->
+  <section class="contact">
+    <div class="contact__container container">
+      <h2 class="contact__title">Contact Me</h2>
+      <p class="contact__intro">
+        Have a question or want to work together? Fill out the form below or reach out using one of the buttons.
+      </p>
+
+      <!-- Contact Form -->
+      <form class="contact__form" action="#" method="POST">
+        <!-- Name Field -->
+        <div class="contact__field">
+          <label for="contact-name" class="contact__label">Name</label>
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            class="contact__input"
+            placeholder="Your full name"
+            required
+          />
+        </div>
+
+        <!-- Email Field -->
+        <div class="contact__field">
+          <label for="contact-email" class="contact__label">Email</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            class="contact__input"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <!-- Message Field -->
+        <div class="contact__field">
+          <label for="contact-message" class="contact__label">Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            class="contact__textarea"
+            rows="5"
+            placeholder="Type your message here…"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="contact__field contact__field--submit">
+          <button type="submit" class="btn contact__btn-submit">
+            Send Message
+          </button>
+        </div>
+      </form>
+
+      <!-- Divider -->
+      <div class="contact__divider" aria-hidden="true"></div>
+
+      <!-- Other Contact Actions -->
+      <div class="contact__actions">
+        <a href="mailto:swa21007@byui.edu" class="btn contact__btn">Email Me</a>
+        <a href="https://calendar.app.google/bzcfHTZ1Mba7AGtQ9" target="_blank" class="btn contact__btn">
+          Book Appointment
+        </a>
+        <a href="contact.html" class="btn btn__outline">More Contact Options</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__container container">
+
+    <p class="footer__text">
+      © 2025 Zachary Swart. All rights reserved.
+    </p>
+
+    <ul class="footer__nav">
+      <li><a href="index.html" class="footer__link">Home</a></li>
+      <li><a href="about.html" class="footer__link">About</a></li>
+      <li><a href="resume.html" class="footer__link">Resume</a></li>
+      <li><a href="projects.html" class="footer__link">Projects</a></li>
+      <li><a href="testimonials.html" class="footer__link">Testimonials</a></li>
+      <li><a href="contact.html" class="footer__link">Contact</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+<script>
+  window.addEventListener('load', () => {
+    const skillsSet = document.querySelector('.education__skills-set');
+    const skillsTrack = document.querySelector('.education__skills-track');
+    if (skillsSet && skillsTrack) {
+      const setWidth = skillsSet.offsetWidth;
+      const duration = setWidth / 40; // px per second
+      skillsTrack.style.setProperty('--scroll-width', `${setWidth}px`);
+      skillsTrack.style.setProperty('--scroll-duration', `${duration}s`);
+    }
+  });
+</script>
+
+</body>
+</html>

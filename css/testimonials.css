@@ -1,0 +1,396 @@
+
+
+/* ===== Page-Specific Variables ===== */
+:root {
+  /* Backgrounds & borders */
+  --color-bg-light: #f9fafb;
+  --color-bg-white: #fff;
+  --color-border: #e5e7eb;
+  --color-border-light: #d1d5db;
+
+  /* Text colors */
+  --color-text-dark: #111827;
+  --color-text-medium: #4b5563;
+  --color-text-muted: #6b7280;
+  --color-text-link: #2563eb;
+  --color-text-link-hover: #1e40af;
+
+  /* Accent colors */
+  --color-yellow: #f59e0b;
+  --color-gray-light: #d1d5db;
+
+  /* Shadows & radius */
+  --color-shadow: rgb(0 0 0 / 5%);
+  --radius-medium: 0.5rem;
+  --radius-small: 0.375rem;
+
+  /* Font sizes */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+}
+
+
+body {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-dark);
+}
+
+
+/* Page Wrapper & Header */
+.testimonials-page {
+  width: 100%;
+}
+
+.testimonials-page__header {
+  background-color: var(--color-bg-light);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.testimonials-page__title {
+  color: var(--color-text-dark);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-page__intro {
+  color: #333;
+  font-size: var(--font-size-base);
+  margin: 0 auto 1rem;
+  max-width: 40rem;
+}
+
+.testimonials-page__visit-count {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+
+/* ───────────────────────────────────
+  Hero Override for Testimonials Page
+────────────────────────────────────── */
+
+.testimonials-hero {
+  background-image: url('../images/hero-backgrounds/testimonials.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 3rem;
+  position: relative;
+  height: 45vh;
+}
+
+.testimonials-hero::before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.testimonials-hero .hero__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.testimonials-hero__inner {
+  background-color: rgb(var(--background-rgb), 0.8);
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 1rem
+}
+
+.testimonials-hero__title {
+  background-color: rgb(var(--background-rgb), 0.8);
+  border-radius: 8px;
+  color: var(--primary);
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.testimonials-hero__description {
+  background-color: rgb(var(--background-rgb), 0.8);
+  border-radius: 8px;
+  color: var(--primary);
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Visit-count styling */
+.testimonials-hero__visits {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+
+/* Testimonial Cards Grid */
+.testimonials-page__cards-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 72rem;
+  padding: 3rem 1rem;
+}
+
+@media (width >= 768px) {
+  .testimonials-page__cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 1024px) {
+  .testimonials-page__cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonial Card (Block) */
+.testimonial-card {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  box-shadow: 0 1px 2px var(--color-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+/* Star Rating Display (Element) */
+.testimonial-card__rating {
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card__rating svg {
+  fill: var(--color-yellow);
+  height: 1.25rem;
+  margin-right: 0.25rem;
+  width: 1.25rem;   /* ~20px */
+}
+
+.testimonial-card__rating svg:last-child {
+  margin-right: 0;
+}
+
+/* Quote Text */
+.testimonial-card__quote {
+  color: var(--color-text-dark);
+  flex-grow: 1;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Author Info */
+.testimonial-card__author {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;     /* ~12px */
+}
+
+.testimonial-card__avatar {
+  border-radius: 50%;
+  height: 2.5rem;
+  object-fit: cover;
+  width: 2.5rem;    /* ~40px */
+}
+
+.testimonial-card__author-info {
+  color: var(--color-text-dark);
+  font-size: var(--font-size-sm);
+}
+
+.testimonial-card__author-info p:first-child {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+/* Social / LinkedIn + Thumbs‐Up */
+.testimonial-card__social {
+  align-items: center;
+  display: flex;
+  font-size: var(--font-size-sm);
+  gap: 1rem;        /* ~16px */
+  margin-top: 1rem;
+}
+
+.testimonial-card__linkedin-link {
+  align-items: center;
+  color: var(--color-text-link);
+  display: inline-flex;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+
+.testimonial-card__linkedin-link:hover {
+  color: var(--color-text-link-hover);
+}
+
+.testimonial-card__linkedin-link svg {
+  fill: currentcolor;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* Thumbs‐Up Button */
+.testimonial-card__like-button {
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: var(--font-size-sm);
+  gap: 0.25rem;
+}
+
+.testimonial-card__like-button:hover {
+  color: var(--color-text-dark);
+}
+
+.testimonial-card__like-button svg {
+  fill: currentcolor;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.testimonial-card__like-count {
+  font-weight: 500;
+}
+
+
+/* Separator / Visual Break */
+.testimonials-page__separator {
+  border-top: 1px solid var(--color-border-light);
+  margin: 3rem auto;
+  width: 75%;
+}
+
+
+/* “Submit a Recommendation” Form */
+.recommendation-form {
+  background-color: var(--color-bg-light);
+  padding: 3rem 1rem;
+}
+
+.recommendation-form__container {
+  margin: 0 auto;
+  max-width: 42rem;      /* ~672px */
+  padding: 0 1rem;
+}
+
+.recommendation-form__title {
+  color: var(--color-text-dark);
+  font-size: 1.5rem;     /* ~24px */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.recommendation-form__intro {
+  color: var(--color-text-medium);
+  font-size: var(--font-size-base);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Form Group */
+.recommendation-form__form {
+  width: 100%;
+}
+
+.recommendation-form__group {
+  margin-bottom: 1.5rem;
+}
+
+.recommendation-form__label {
+  color: var(--color-text-dark);
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+/* Star Rating Inputs */
+.recommendation-form__rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.recommendation-form__rating-input {
+  display: none;
+}
+
+.recommendation-form__rating-label {
+  color: var(--color-gray-light);
+  cursor: pointer;
+  font-size: 1.5rem;   /* ~24px */
+  user-select: none;
+}
+
+/* Hidden honeypot field */
+.recommendation-form .hidden {
+  display: none;
+}
+
+
+/* Override Inputs & Button to Match Global “Contact” Style */
+
+/* Input & Textarea: same as .contact__input / .contact__textarea */
+.recommendation-form__input,
+.recommendation-form__textarea {
+  background-color: var(--background);
+  border: 2px solid var(--background);
+  border-radius: 8px;
+  color: var(--primary);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  width: 100%;
+}
+
+.recommendation-form__input:focus,
+.recommendation-form__textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgb(252 163 17 / 30%);
+  outline: none;
+}
+
+/* Submit Button: same as .contact__btn-submit */
+.recommendation-form__button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  color: var(--background);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1;
+  padding: 0.75rem 1.25rem;
+  transition: background-color 0.4s ease;
+}
+
+.recommendation-form__button:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}

@@ -1,0 +1,138 @@
+
+
+/* ================================
+   Layout Grid for Image + Text
+================================ */
+
+.about-growing-up__grid,
+.about-mission__grid,
+.about-college__grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.about-growing-up__grid--reverse,
+.about-mission__grid--reverse,
+.about-college__grid--reverse {
+  flex-direction: row-reverse;
+}
+
+.about-growing-up__grid > *,
+.about-mission__grid > *,
+.about-college__grid > * {
+  flex: 1 1 50%;
+}
+
+.about-growing-up__title,
+.about-mission__title,
+.about-college__title {
+  margin-bottom: 1rem;
+}
+
+.about-growing-up__text,
+.about-mission__text,
+.about-college__text {
+  padding: 1rem;
+}
+
+
+/* Optional Reverse Layout */
+.about-mission__grid--reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* ================================
+   Main Section Images (Rectangles)
+================================ */
+
+.about-growing-up__main-image,
+.about-mission__main-image,
+.about-college__main-image {
+  height: 337.5px; /* 16:9 ratio */
+  max-width: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+/* ================================
+   Gallery Grid
+================================ */
+
+.about-growing-up__gallery,
+.about-mission__gallery,
+.about-college__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+
+/* ================================
+   Gallery Images + Captions
+================================ */
+
+/* Gallery Item (Hoverable Card Style) */
+.about-growing-up__figure,
+.about-mission__figure,
+.about-college__figure {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  max-width: 510px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.about-growing-up__figure:hover,
+.about-mission__figure:hover,
+.about-college__figure:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  transform: translateY(-4px);
+}
+
+.about-growing-up__gallery img,
+.about-mission__gallery img,
+.about-college__gallery img {
+  display: block;
+  height: 250px;
+  object-fit: cover;
+  width: 300px;
+}
+
+/* Captions */
+.about-growing-up__figure figcaption,
+.about-mission__figure figcaption,
+.about-college__figure figcaption {
+  color: #14213D;
+  font-family: Inter, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+
+/* ================================
+   Responsive Adjustments
+================================ */
+
+@media (width <= 768px) {
+  .about-growing-up__grid,
+  .about-mission__grid,
+  .about-college__grid {
+    flex-direction: column;
+  }
+}

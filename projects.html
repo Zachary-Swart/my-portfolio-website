@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio site for Zachary Swart">
+  <title>Zachary Swart | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+
+<body class="page page--projects">
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logos/zs-logo.png" alt="Zachary Swart Logo" class="header__logo-image">
+      </a>
+      <div class="header__name">Zachary Swart</div>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+        <li><a href="index.html" class="header__nav-link active">Home</a></li>
+        <li><a href="about.html" class="header__nav-link">About</a></li>
+        <li><a href="resume.html" class="header__nav-link">Resume</a></li>
+        <li><a href="projects.html" class="header__nav-link">Projects</a></li>
+        <li><a href="testimonials.html" class="header__nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        <li><a href="report.html" class="header__nav-link">Report</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="projects">
+    <!-- Hero Section -->
+    <section class="hero projects-hero">
+      <div class="hero__content container">
+        <div class="projects-hero__inner">
+          <h1 class="hero__title projects-hero__title">My Projects</h1>
+          <p class="hero__description projects-hero__description">
+            Explore examples of how I turn messy data into meaningful solutions using tools like Excel, SQL, and Power BI.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects__grid container">
+      <div class="project__card">
+        <h2 class="project__title">Excel Data Checker</h2>
+        <p class="project__tools">Excel · VBA · Macros</p>
+        <p class="project__description">
+          Automated tool that flagged invalid entries in 3,000+ rows and sped up data validation by 400% using VBA macros.
+        </p>
+        <!-- Optional image or GIF preview here -->
+      </div>
+
+      <div class="project__card">
+        <h2 class="project__title">MySQL Query Practice</h2>
+        <p class="project__tools">MySQL · Sakila DB · Window Functions</p>
+        <p class="project__description">
+          A collection of optimized queries built for real-world analytics practice. Includes joins, CTEs, subqueries, and report-ready output.
+        </p>
+        <a href="mysql-project.html" class="project__link">View Sample Queries →</a>
+      </div>
+
+      <div class="project__card">
+        <h2 class="project__title">Power BI Projects</h2>
+        <p class="project__tools">Power BI · DAX · Data Modeling</p>
+        <p class="project__description">
+          Interactive dashboards analyzing business performance. Built during class projects using mock company data to simulate real use cases.
+        </p>
+        <a href="powerbi-project.html" class="project__link">View Dashboards →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <p class="footer__text">© 2025 Zachary Swart. All rights reserved.</p>
+      <ul class="footer__nav">
+        <li><a href="index.html" class="footer__link">Home</a></li>
+        <li><a href="about.html" class="footer__link">About</a></li>
+        <li><a href="resume.html" class="footer__link">Resume</a></li>
+        <li><a href="projects.html" class="footer__link">Projects</a></li>
+        <li><a href="testimonials.html" class="footer__link">Testimonials</a></li>
+        <li><a href="contact.html" class="footer__link">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

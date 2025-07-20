@@ -1,0 +1,572 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio site for Zachary Swart">
+  <title>Zachary Swart | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/testimonials.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header__container container">
+
+    <!-- Logo -->
+    <a href="index.html" class="header__logo">
+      <img src="images/logos/zs-logo.png" alt="Zachary Swart Logo" class="header__logo-image">
+    </a>
+
+    <!-- Your Name -->
+    <div class="header__name">Zachary Swart</div>
+
+    <!-- Navigation -->
+    <nav class="header__nav" aria-label="Main navigation">
+      <ul class="header__nav-list">
+        <li><a href="index.html" class="header__nav-link active">Home</a></li>
+        <li><a href="about.html" class="header__nav-link">About</a></li>
+        <li><a href="resume.html" class="header__nav-link">Resume</a></li>
+        <li><a href="projects.html" class="header__nav-link">Projects</a></li>
+        <li><a href="testimonials.html" class="header__nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        <li><a href="report.html" class="header__nav-link">Report</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <!-- =========================================
+       MAIN CONTENT: TESTIMONIALS PAGE (BEM + CSS)
+       ========================================= -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero testimonials-hero">
+      <div class="hero__content container">
+        <div class="testimonials-hero__inner">
+          <h1 class="hero__title testimonials-hero__title">My Recommendations</h1>
+          <p class="hero__description testimonials-hero__description">
+            Below are a couple of recommendations I’ve received on LinkedIn. If you’d like to share your own, scroll down to submit a recommendation.
+          </p>
+          <p class="hero__description testimonials-hero__visits">
+            Page visits: <span id="visitCount">—</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-page">
+      <!-- Testimonial Cards Grid -->
+      <div class="testimonials-page__cards-container">
+        <!-- ─── Card #1 ─── -->
+        <article class="testimonial-card">
+          <!-- Star Rating (5/5) -->
+          <div class="testimonial-card__rating">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 3.48a1 1 0 00.95.69h3.65c.969 0 
+                       1.371 1.24.588 1.81l-2.955 2.15a1 1 0 00-.364 
+                       1.118l1.13 3.48c.3.92-.755 1.688-1.54 
+                       1.118l-2.955-2.15a1 1 0 00-1.175 0l-2.955 
+                       2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 3.48a1 1 0 00.95.69h3.65c.969 0 
+                       1.371 1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 0l-2.955 
+                       2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 3.48a1 1 0 00.95.69h3.65c.969 0 
+                       1.371 1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 0l-2.955 
+                       2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 3.48a1 1 0 00.95.69h3.65c.969 0 
+                       1.371 1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 0l-2.955 
+                       2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 3.48a1 1 0 00.95.69h3.65c.969 0 
+                       1.371 1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 0l-2.955 
+                       2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+          </div>
+
+          <!-- Quote -->
+          <blockquote class="testimonial-card__quote">
+            “When I hired Zach, I heard from multiple faculty at BYUI that they loved him and they were so glad I hired him. It is evident now why I kept hearing this from so many people, Zach has been a wonderful addition to the team. He brings a great energy and his positive, happy vibe is contagious. He is curious and he sees connections to the work done here and the technologies and skills he learns in the classroom and through his own study and applies them. He has a great work ethic and has been a strong example to his team. I am so lucky Zach found his way to my team and he will be a great asset to any organization when he graduates from BYUI.”
+          </blockquote>
+
+          <!-- Author Info -->
+          <footer class="testimonial-card__author">
+            <img
+              src="images/linkedin-profile-pictures/sheila-wener.jpg"
+              alt="Sheila Wener"
+              class="testimonial-card__avatar"
+            />
+            <div class="testimonial-card__author-info">
+              <p>Sheila Wener</p>
+              <p>Career Services Manager, BYU-I</p>
+            </div>
+          </footer>
+
+          <!-- Social / LinkedIn + Thumbs‐Up -->
+          <div class="testimonial-card__social">
+            <!-- LinkedIn Link -->
+            <a
+              href="https://www.linkedin.com/in/sheilawener/"
+              target="_blank"
+              class="testimonial-card__linkedin-link"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M100.28 448H7.4V148.9h92.88zm-46.44-338C24 
+                         110 0 86 0 57.4S24 4 53.84 4 107.68 28 107.68 
+                         57.4 83.6 110 53.84 110zm394.24 338h-92.68V302.4c0-34.7-12.48-58.4-43.54-58.4-23.75 
+                         0-37.92 16-44.2 31.4-2.28 5.6-2.84 13.4-2.84 
+                         21.2V448h-92.68s1.24-249.9 0-276H267.8v39.1c12.32-19 
+                         34.28-46 83.42-46 60.94 0 106.64 39.8 
+                         106.64 125.4V448z" />
+              </svg>
+              <span>View on LinkedIn</span>
+            </a>
+
+            <!-- Thumbs‐Up Button -->
+            <button
+              type="button"
+              class="testimonial-card__like-button"
+              data-id="1"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M2 10a2 2 0 012-2h3V4a2 2 0 014-1.732A2 
+                         2 0 0115.732 4l.268 3h2a2 2 0 110 
+                         4h-2l-.732 6H8a2 2 0 01-2-2v-4H4a2 
+                         2 0 01-2-2z" />
+              </svg>
+              <span class="testimonial-card__like-count">12</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- ─── Card #2 ─── -->
+        <article class="testimonial-card">
+          <!-- Star Rating (4/5: last star is gray) -->
+          <div class="testimonial-card__rating">
+            <!-- Four filled stars -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 
+                       3.48a1 1 0 00.95.69h3.65c.969 0 1.371 
+                       1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 
+                       0l-2.955 2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 
+                       3.48a1 1 0 00.95.69h3.65c.969 0 1.371 
+                       1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 
+                       0l-2.955 2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 
+                       3.48a1 1 0 00.95.69h3.65c.969 0 1.371 
+                       1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 
+                       0l-2.955 2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 
+                       3.48a1 1 0 00.95.69h3.65c.969 0 1.371 
+                       1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 
+                       0l-2.955 2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+            <!-- One gray star (fifth) -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--color-gray-light)">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.13 
+                       3.48a1 1 0 00.95.69h3.65c.969 0 1.371 
+                       1.24.588 1.81l-2.955 2.15a1 
+                       1 0 00-.364 1.118l1.13 3.48c.3.92-.755 
+                       1.688-1.54 1.118l-2.955-2.15a1 1 0 00-1.175 
+                       0l-2.955 2.15c-.784.57-1.839-.197-1.54-1.118l1.13-3.48a1 
+                       1 0 00-.364-1.118L2.41 8.907c-.783-.57-.38-1.81.588-1.81h3.65a1 
+                       1 0 00.95-.69l1.13-3.48z" />
+            </svg>
+          </div>
+
+          <!-- Quote -->
+          <blockquote class="testimonial-card__quote">
+            “Zachary is a standout colleague: Reliable, efficient, and a genuinely enjoyable person to work with. He brings great energy to the team, balancing professionalism with a positive, approachable attitude. He consistently delivers high-quality work quickly and accurately, and he’s especially skilled at connecting with students, creating a welcoming and supportive environment. Anyone would be lucky to have him on their team.”
+          </blockquote>
+
+          <!-- Author Info -->
+          <footer class="testimonial-card__author">
+            <img
+              src="images/linkedin-profile-pictures/david-rojas.jpg"
+              alt="Daivd Rojas"
+              class="testimonial-card__avatar"
+            />
+            <div class="testimonial-card__author-info">
+              <p>David Rojas</p>
+              <p>Career Success Lead, BYU-I</p>
+            </div>
+          </footer>
+
+          <!-- Social / LinkedIn + Thumbs‐Up -->
+          <div class="testimonial-card__social">
+            <!-- LinkedIn Link -->
+            <a
+              href="https://www.linkedin.com/in/davidrojass1/"
+              target="_blank"
+              class="testimonial-card__linkedin-link"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M100.28 448H7.4V148.9h92.88zm-46.44-338C24 
+                         110 0 86 0 57.4S24 4 53.84 4 107.68 28 107.68 
+                         57.4 83.6 110 53.84 110zm394.24 338h-92.68V302.4c0-34.7-12.48-58.4-43.54-58.4-23.75 
+                         0-37.92 16-44.2 31.4-2.28 5.6-2.84 13.4-2.84 
+                         21.2V448h-92.68s1.24-249.9 0-276H267.8v39.1c12.32-19 
+                         34.28-46 83.42-46 60.94 0 106.64 39.8 
+                         106.64 125.4V448z" />
+              </svg>
+              <span>View on LinkedIn</span>
+            </a>
+
+            <!-- Thumbs‐Up Button -->
+            <button
+              type="button"
+              class="testimonial-card__like-button"
+              data-id="2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M2 10a2 2 0 012-2h3V4a2 2 0 014-1.732A2 
+                         2 0 0115.732 4l.268 3h2a2 2 0 110 
+                         4h-2l-.732 6H8a2 2 0 01-2-2v-4H4a2 
+                         2 0 01-2-2z" />
+              </svg>
+              <span class="testimonial-card__like-count">8</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- (Add more testimonial‐card articles here.) -->
+      </div>
+
+      <!-- Separator / Visual Break -->
+      <div class="testimonials-page__separator"></div>
+
+      <!-- 4. “Submit a Recommendation” Form -->
+      <section class="recommendation-form">
+        <div class="recommendation-form__container">
+          <h2 class="recommendation-form__title">
+            Submit a Recommendation
+          </h2>
+          <p class="recommendation-form__intro">
+            If we’ve worked together or you’ve seen my work, I’d love to hear your feedback. Fill out the form below and I’ll review and publish it here.
+          </p>
+
+          <form
+            id="recommendationForm"
+            class="recommendation-form__form"
+            action="/submit-recommendation"
+            method="POST"
+          >
+            <!-- Name -->
+            <div class="recommendation-form__group">
+              <label for="name" class="recommendation-form__label">
+                Name <span style="color: #dc2626;">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="recommendation-form__input"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="recommendation-form__group">
+              <label for="email" class="recommendation-form__label">
+                Email <span style="color: #dc2626;">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="recommendation-form__input"
+              />
+            </div>
+
+            <!-- Relationship / Context -->
+            <div class="recommendation-form__group">
+              <label for="context" class="recommendation-form__label">
+                How We Know Each Other
+              </label>
+              <input
+                type="text"
+                id="context"
+                name="context"
+                placeholder="ex: Former Colleague"
+                class="recommendation-form__input"
+              />
+            </div>
+
+            <!-- Company / Role -->
+            <div class="recommendation-form__group">
+              <label for="company" class="recommendation-form__label">
+                Company / Role
+              </label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="ex: Data Analyst"
+                class="recommendation-form__input"
+              />
+            </div>
+
+            <!-- Star Rating Input -->
+            <div class="recommendation-form__group">
+              <label class="recommendation-form__label">
+                Rating
+              </label>
+              <div class="recommendation-form__rating">
+                <input
+                  type="radio"
+                  id="star5"
+                  name="rating"
+                  value="5"
+                  class="recommendation-form__rating-input"
+                />
+                <label
+                  for="star5"
+                  class="recommendation-form__rating-label"
+                >★</label>
+
+                <input
+                  type="radio"
+                  id="star4"
+                  name="rating"
+                  value="4"
+                  class="recommendation-form__rating-input"
+                />
+                <label
+                  for="star4"
+                  class="recommendation-form__rating-label"
+                >★</label>
+
+                <input
+                  type="radio"
+                  id="star3"
+                  name="rating"
+                  value="3"
+                  class="recommendation-form__rating-input"
+                />
+                <label
+                  for="star3"
+                  class="recommendation-form__rating-label"
+                >★</label>
+
+                <input
+                  type="radio"
+                  id="star2"
+                  name="rating"
+                  value="2"
+                  class="recommendation-form__rating-input"
+                />
+                <label
+                  for="star2"
+                  class="recommendation-form__rating-label"
+                >★</label>
+
+                <input
+                  type="radio"
+                  id="star1"
+                  name="rating"
+                  value="1"
+                  class="recommendation-form__rating-input"
+                />
+                <label
+                  for="star1"
+                  class="recommendation-form__rating-label"
+                >★</label>
+              </div>
+            </div>
+
+            <!-- Recommendation Text -->
+            <div class="recommendation-form__group">
+              <label for="message" class="recommendation-form__label">
+                Recommendation <span style="color: #dc2626;">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="recommendation-form__textarea"
+                placeholder="Write your recommendation here..."
+              ></textarea>
+            </div>
+
+            <!-- Honeypot Field (hidden to catch bots) -->
+            <div class="hidden">
+              <label for="website">Website</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div style="text-align: center;">
+              <button
+                type="submit"
+                class="recommendation-form__button"
+              >
+                Submit Recommendation
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </main>
+
+<footer class="footer">
+  <div class="footer__container container">
+
+    <p class="footer__text">
+      © 2025 Zachary Swart. All rights reserved.
+    </p>
+
+    <ul class="footer__nav">
+      <li><a href="index.html" class="footer__link">Home</a></li>
+      <li><a href="about.html" class="footer__link">About</a></li>
+      <li><a href="resume.html" class="footer__link">Resume</a></li>
+      <li><a href="projects.html" class="footer__link">Projects</a></li>
+      <li><a href="testimonials.html" class="footer__link">Testimonials</a></li>
+      <li><a href="contact.html" class="footer__link">Contact</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+  <!-- =========================================
+       JavaScript for Visit Count, Thumbs-Up,
+       & Star-Rating Interaction (same as before)
+       ========================================= -->
+  <script>
+    /* FETCH & DISPLAY “Page visits” */
+    fetch('/api/visit-count')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('visitCount').textContent = data.count;
+      })
+      .catch(err => {
+        console.error('Error fetching visit count:', err);
+        document.getElementById('visitCount').textContent = '—';
+      });
+
+    /* HANDLE “Thumbs-Up” CLICKS */
+    document.querySelectorAll('.testimonial-card__like-button')
+      .forEach(button => {
+        button.addEventListener('click', () => {
+          const testimonialId = button.getAttribute('data-id');
+          fetch(`/api/testimonials/${testimonialId}/like`, {
+            method: 'POST'
+          })
+            .then(res => res.json())
+            .then(data => {
+              const countSpan = button.querySelector('.testimonial-card__like-count');
+              if (countSpan && data.likes !== undefined) {
+                countSpan.textContent = data.likes;
+              }
+            })
+            .catch(err => {
+              console.error('Error updating likes:', err);
+            });
+        });
+      });
+
+    /* STAR-RATING INPUT INTERACTIONS */
+    const ratingLabels = document.querySelectorAll('.recommendation-form__rating-label');
+    ratingLabels.forEach(label => {
+      label.addEventListener('mouseover', () => {
+        const val = parseInt(label.getAttribute('for').replace('star', ''), 10);
+        ratingLabels.forEach((lbl, idx) => {
+          if (5 - idx <= val) {
+            lbl.style.color = 'var(--color-yellow)';
+          } else {
+            lbl.style.color = 'var(--color-gray-light)';
+          }
+        });
+      });
+
+      label.addEventListener('mouseout', () => {
+        const checkedInput = document.querySelector('.recommendation-form__rating-input:checked');
+        const selectedVal = checkedInput ? parseInt(checkedInput.value, 10) : 0;
+        ratingLabels.forEach((lbl, idx) => {
+          if (5 - idx <= selectedVal) {
+            lbl.style.color = 'var(--color-yellow)';
+          } else {
+            lbl.style.color = 'var(--color-gray-light)';
+          }
+        });
+      });
+
+      label.addEventListener('click', () => {
+        const checkedInput = document.querySelector('.recommendation-form__rating-input:checked');
+        const selectedVal = checkedInput ? parseInt(checkedInput.value, 10) : 0;
+        ratingLabels.forEach((lbl, idx) => {
+          if (5 - idx <= selectedVal) {
+            lbl.style.color = 'var(--color-yellow)';
+          } else {
+            lbl.style.color = 'var(--color-gray-light)';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

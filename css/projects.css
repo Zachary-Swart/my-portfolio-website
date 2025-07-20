@@ -1,0 +1,132 @@
+/* Projects Page Styles */
+
+.projects-hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-image: url('../images/hero-backgrounds/projects.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 3rem;
+  position: relative;
+  height: 45vh;
+  margin-bottom: 4rem;
+}
+
+.projects-hero::before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.projects-hero .hero__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.projects-hero__inner {
+  background-color: rgb(var(--background-rgb), 0.8);
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.projects-hero__title {
+  background-color: rgb(var(--background-rgb), 0.8);
+  border-radius: 8px;
+  color: var(--primary);
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.projects-hero__description {
+  background-color: rgb(var(--background-rgb), 0.8);
+  border-radius: 8px;
+  color: var(--primary);
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+
+/* ===== Project Grid ===== */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.project__card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project__title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.project__tools {
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.project__description {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.project__link {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  align-self: flex-start;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.project__link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .projects-hero__title {
+    font-size: 2rem;
+  }
+
+  .projects-hero__description {
+    font-size: 1rem;
+  }
+
+  .project__title {
+    font-size: 1.25rem;
+  }
+}

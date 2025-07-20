@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Zachary Swart">
+  <title>Contact | Zachary Swart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logos/zs-logo.png" alt="Zachary Swart Logo" class="header__logo-image">
+      </a>
+      <div class="header__name">Zachary Swart</div>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+        <li><a href="index.html" class="header__nav-link active">Home</a></li>
+        <li><a href="about.html" class="header__nav-link">About</a></li>
+        <li><a href="resume.html" class="header__nav-link">Resume</a></li>
+        <li><a href="projects.html" class="header__nav-link">Projects</a></li>
+        <li><a href="testimonials.html" class="header__nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        <li><a href="report.html" class="header__nav-link">Report</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contact contact--page">
+      <div class="contact__container container">
+        <h2 class="contact__title">Let’s Connect</h2>
+        <p class="contact__intro">
+          Have a question, a project idea, or just want to say hi? Feel free to reach out — I’d love to hear from you.
+        </p>
+
+        <!-- Contact Form -->
+        <form class="contact__form" action="#" method="POST">
+          <div class="contact__field">
+            <label for="name" class="contact__label">Name</label>
+            <input type="text" id="name" name="name" class="contact__input" required />
+          </div>
+
+          <div class="contact__field">
+            <label for="email" class="contact__label">Email</label>
+            <input type="email" id="email" name="email" class="contact__input" required />
+          </div>
+
+          <div class="contact__field">
+            <label for="message" class="contact__label">Message</label>
+            <textarea id="message" name="message" class="contact__textarea" rows="5" required></textarea>
+          </div>
+
+          <div class="contact__field contact__field--submit">
+            <button type="submit" class="btn contact__btn-submit">Send Message</button>
+          </div>
+        </form>
+
+        <div class="contact__divider" aria-hidden="true"></div>
+
+        <!-- Direct Contact Options -->
+        <div class="contact__actions">
+          <a href="mailto:swa21007@byui.edu" class="btn contact__btn">
+            📧 Email Me
+          </a>
+          <a href="https://calendar.app.google/bzcfHTZ1Mba7AGtQ9" target="_blank" class="btn contact__btn">
+            🗓️ Book a Meeting
+          </a>
+          <a href="https://www.linkedin.com/in/zacharyswart/" target="_blank" class="btn contact__btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 
+              2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 
+              19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764 
+              0-.975.784-1.768 1.75-1.768s1.75.793 
+              1.75 1.768c0 .974-.784 1.764-1.75 
+              1.764zm13.5 11.268h-3v-5.604c0-1.338-.026-3.065-1.868-3.065-1.869 
+              0-2.156 1.46-2.156 2.969v5.7h-3v-10h2.881v1.367h.041c.401-.76 
+              1.379-1.561 2.838-1.561 3.033 0 3.593 1.996 3.593 
+              4.59v5.604z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+  <div class="footer__container container">
+
+    <p class="footer__text">
+      © 2025 Zachary Swart. All rights reserved.
+    </p>
+
+    <ul class="footer__nav">
+      <li><a href="index.html" class="footer__link">Home</a></li>
+      <li><a href="about.html" class="footer__link">About</a></li>
+      <li><a href="resume.html" class="footer__link">Resume</a></li>
+      <li><a href="projects.html" class="footer__link">Projects</a></li>
+      <li><a href="testimonials.html" class="footer__link">Testimonials</a></li>
+      <li><a href="contact.html" class="footer__link">Contact</a></li>
+    </ul>
+
+  </div>
+</footer>
+</body>
+</html>

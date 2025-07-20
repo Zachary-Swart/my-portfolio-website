@@ -1,0 +1,3 @@
+Paste this into terminal to auto fix CSS files!
+
+npx stylelint --fix "**/*.css"
